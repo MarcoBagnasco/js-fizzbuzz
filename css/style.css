@@ -7,13 +7,12 @@
 body {
     font-size: 36px;
     font-weight: bold;
-    text-shadow: 0 0 1px #000;
     background-color: #ccc;
 }
 
 /* UTILITIES */
 .fizz{
-    color: #0f0;
+    color: rgb(14, 177, 14);
 }
 .buzz{
     color: #00f;
@@ -25,6 +24,7 @@ body {
 /* APP MAIN */
 .app-main{
     height: 100vh;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,12 +32,24 @@ body {
 }
 .app-main h1{
     margin-bottom: 40px;
+    font-size: 100px;
+}
+/* Legend */
+.app-main .legend{
+    width: 80%;
+    margin-bottom: 30px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    border-radius: 30px;
 }
 /* Table */
 .app-main table{
     border-collapse: collapse;
 }
 .app-main table td{
+    width: 165px;
     padding: 5px 10px;
     text-align: center;
     border: 2px solid #000;

@@ -7,14 +7,23 @@
     4. Per tutti gli altri casi stampa il numero
  */
 var limit = 100;
+var fizz = 3;
+var buzz = 5;
+
+// Print Legend
+document.getElementById('fizz-num').innerHTML = fizz;
+document.getElementById('buzz-num').innerHTML = buzz;
+document.getElementById('fizz-buzz-num-1').innerHTML = fizz;
+document.getElementById('fizz-buzz-num-2').innerHTML = buzz;
+
 for(i = 1; i <= limit; i++){
-    if((i % 3 == 0) && (i % 5 == 0)){
+    if((i % fizz == 0) && (i % buzz == 0)){
         // console.log('FizzBuzz');
         document.getElementById(i).innerHTML = '<span class="fizz-buzz">FizzBuzz</span>';
-    } else if(i % 3 == 0){
+    } else if(i % fizz == 0){
         // console.log('Fizz');
         document.getElementById(i).innerHTML = '<span class="fizz">Fizz</span>';
-    } else if(i % 5 == 0){
+    } else if(i % buzz == 0){
         // console.log('Buzz');
         document.getElementById(i).innerHTML = '<span class="buzz">Buzz</span>';
     } else{
