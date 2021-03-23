@@ -6,9 +6,25 @@
     3. Stampa Fizz per i divisibili per 3, Buzz per i divisibili per 5, FizzBuzz per i divisibili per entrambi
     4. Per tutti gli altri casi stampa il numero
  */
+
+//Ask for fizz and buzz values
+for(;true;){
+    var fizz = parseInt(prompt('Inserisci multiplo per il Fizz'));
+    if(!isNaN(fizz)){
+        break;
+    }
+    alert('Non hai inserito un numero')
+}
+
+for(;true;){
+    var buzz = parseInt(prompt('Inserisci multiplo per il Buzz'));
+    if(!isNaN(buzz)){
+        break;
+    }
+    alert('Non hai inserito un numero')
+}
+
 var limit = 100;
-var fizz = 3;
-var buzz = 5;
 
 // Print Legend
 document.getElementById('fizz-num').innerHTML = fizz;
