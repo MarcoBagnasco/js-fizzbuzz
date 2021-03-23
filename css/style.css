@@ -1,0 +1,44 @@
+/* GENERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 0 0 1px #000;
+    background-color: #ccc;
+}
+
+/* UTILITIES */
+.fizz{
+    color: #0f0;
+}
+.buzz{
+    color: #00f;
+}
+.fizz-buzz{
+    color: #f00;
+}
+
+/* APP MAIN */
+.app-main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.app-main h1{
+    margin-bottom: 40px;
+}
+/* Table */
+.app-main table{
+    border-collapse: collapse;
+}
+.app-main table td{
+    padding: 5px 10px;
+    text-align: center;
+    border: 2px solid #000;
+}
